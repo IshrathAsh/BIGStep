@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Frames</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between frames */
+            padding: 20px; /* Space around the container */
+        }
+        .frame {
+            width:450px;
+            height: 500px;
+            /*border: 3px solid #0e0904; Wood-like border color */
+            background-color: rgb(255, 255, 255);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .schedule {
+            background-color: rgb(250, 223, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 80%;
+        }
+        .week {
+            margin-bottom: 20px;
+        }
+        .date {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .day {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .event {
+            background-color: #402cf1;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .one{
+            color: blue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="frame"><center>
+            <div class="schedule">
+                <div class="week">
+                    <div class="one"><b>ON THIS DAY</b></div>
+                    <div class="day">Thu 15</div>
+                    <div class="event">Independence Day</div>
+                    <div class="event">Parsi New Year</div>
+                </div>
+            </div>
+        </center></div>
+        <div class="frame"><center>
+            <div class="schedule">
+                <div class="week">
+                    <div class="one"><b>ON THIS WEEK</b></div>
+                    <div class="date">(11–17 Aug)</div>
+                    <div class="day">Thu 15</div>
+                    <div class="event">Independence Day</div>
+                    <div class="event">Parsi New Year</div>
+                </div>
+            </div>
+        </center></div>
+        <div class="frame"><center>
+            <div class="schedule">
+                <div class="week">
+                    <div class="one"><b>ON THIS MONTH</b></div>
+                    <div class="date">(11–17 Aug)</div>
+                    <div class="day">Thu 15</div>
+                    <div class="event">Independence Day</div>
+                    <div class="event">Parsi New Year</div>
+                </div>
+                <div class="week">
+                    <div class="date">(18–24 Aug)</div>
+                    <div class="day">Mon 19</div>
+                    <div class="event">Raksha Bandhan (Rakhi)</div>
+                </div>
+                <div class="week">
+                    <div class="date">(25–31 Aug)</div>
+                    <div class="day">Mon 26</div>
+                    <div class="event">Janmashtami</div>
+                    <div class="event">Janmashtami (Smarta)</div>
+                </div>
+            </div>
+        </center></div>
+    </div>
+    <br>
+    <center><a href="index.html"><button style="margin-top: 600px;margin-left:-700px;background-color: blue;font-size: large;">GO BACK</button></a></center>
+</body>
+</html>
