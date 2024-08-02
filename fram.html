@@ -5,22 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Frames</title>
     <style>
-        body{
-            background: url("4A5.gif");
-            background-size: cover;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 10px; /* Space between frames */
-            padding: 20px; /* Space around the container */
-        }
-        .frame {
-            width:450px;
-            height: 500px;
-            /*border: 3px solid #0e0904; Wood-like border color */
-            /*background-color: rgb(255, 255, 255);*/
-        }
         body {
             font-family: Arial, sans-serif;
             background-color: #0f0e0e;
@@ -30,14 +14,31 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: url("4A5.gif") no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* Space between frames */
+            padding: 20px; /* Space around the container */
+        }
+        .frame {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .schedule {
             background-color: rgb(2, 2, 2);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            max-width: 400px;
-            width: 80%;
+            max-width: 100%;
+            width: 100%;
         }
         .week {
             margin-bottom: 20px;
@@ -59,55 +60,78 @@
             border-radius: 5px;
             margin-bottom: 5px;
             text-decoration: none;
+            display: block;
         }
-        .one{
+        .one {
             color: white;
             font-size: 30px;
         }
-        a{
+        a {
             text-decoration: none;
+        }
+        button {
+            margin: 20px;
+            background-color: rgb(226, 211, 224);
+            font-size: large;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .frame {
+                width: 90%;
+                max-width: 500px;
+            }
+            button {
+                margin: 20px 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="frame"><center>
+        <div class="frame">
             <div class="schedule">
                 <div class="week">
                     <div class="one"><b>ON THIS WEEK</b></div>
-                    <a href="indepen.html"><div class="event">Independence Day</div></a>
+                    <a href="indepen.html" class="event">Independence Day</a>
                 </div>
             </div>
-        </center></div>
-        <div class="frame"><center>
+        </div>
+        <div class="frame">
             <div class="schedule">
                 <div class="week">
                     <div class="one"><b>ON THIS MONTH</b></div>
-                    <a href="hackathon.html"><div class="event">hackathon</div></a>
-                    <a href="indepen.html"><div class="event">Independence day</div></a>
-                    <a href="seminars.html"><div class="event">seminar</div></a>
+                    <a href="hackathon.html" class="event">Hackathon</a>
+                    <a href="indepen.html" class="event">Independence Day</a>
+                    <a href="seminars.html" class="event">Seminar</a>
                 </div>
             </div>
-        </center></div>
-        <div class="frame"><center>
+        </div>
+        <div class="frame">
             <div class="schedule">
                 <div class="week">
                     <div class="one"><b>ON THIS YEAR</b></div>
-                    <a href="womens.html"><div class="event">Womens day</div></a>
-                    <a href="ugadi.html"><div class="event">Ugadi</div></a>
-                    <a href="abhiyanth.html"><div class="event">Abhiyanth</div></a>
-                    <a href="convocation.html"><div class="event">Convocation</div></a>
-                    <a href="hackathon.html"><div class="event">hackathon</div></a>
-                    <a href="indepen.html"><div class="event">Independence day</div></a>
-                    <a href="seminars.html"><div class="event">seminar</div></a>
-                    <a href="vinayaka.html"><div class="event">Ganesh chathurthi</div></a>
-                    <a href="cricket.html"><div class="event">Cricket match</div></a>
-                    <a href="seminars.html"><div class="event">seminar</div></a>
+                    <a href="womens.html" class="event">Womens Day</a>
+                    <a href="ugadi.html" class="event">Ugadi</a>
+                    <a href="abhiyanth.html" class="event">Abhiyanth</a>
+                    <a href="convocation.html" class="event">Convocation</a>
+                    <a href="hackathon.html" class="event">Hackathon</a>
+                    <a href="indepen.html" class="event">Independence Day</a>
+                    <a href="seminars.html" class="event">Seminar</a>
+                    <a href="vinayaka.html" class="event">Ganesh Chathurthi</a>
+                    <a href="cricket.html" class="event">Cricket Match</a>
                 </div>
             </div>
-        </center></div>
+        </div>
     </div>
-    <br>
-    <center><a href="index.html"><button style="margin-top: 600px;margin-left:-700px;background-color: rgb(226, 211, 224);font-size: large;">GO BACK</button></a></center>
+    <center>
+        <a href="index.html"><button>GO BACK</button></a>
+    </center>
 </body>
 </html>
