@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Frames</title>
     <style>
+        body{
+            background: url("4A5.gif");
+            background-size: cover;
+        }
         .container {
             display: flex;
             justify-content: center;
@@ -15,11 +19,11 @@
             width:450px;
             height: 500px;
             /*border: 3px solid #0e0904; Wood-like border color */
-            background-color: rgb(255, 255, 255);
+            /*background-color: rgb(255, 255, 255);*/
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            background-color: #0f0e0e;
             margin: 0;
             padding: 0;
             display: flex;
@@ -28,7 +32,7 @@
             height: 100vh;
         }
         .schedule {
-            background-color: rgb(250, 223, 255);
+            background-color: rgb(2, 2, 2);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -49,15 +53,19 @@
             margin-bottom: 10px;
         }
         .event {
-            background-color: #402cf1;
-            color: white;
+            background-color: #d584f5;
+            color: rgb(3, 1, 5);
             padding: 10px;
             border-radius: 5px;
             margin-bottom: 5px;
+            text-decoration: none;
         }
         .one{
-            color: blue;
+            color: white;
             font-size: 30px;
+        }
+        a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -66,21 +74,8 @@
         <div class="frame"><center>
             <div class="schedule">
                 <div class="week">
-                    <div class="one"><b>ON THIS DAY</b></div>
-                    <div class="day">Thu 15</div>
-                    <div class="event">Independence Day</div>
-                    <div class="event">Parsi New Year</div>
-                </div>
-            </div>
-        </center></div>
-        <div class="frame"><center>
-            <div class="schedule">
-                <div class="week">
                     <div class="one"><b>ON THIS WEEK</b></div>
-                    <div class="date">(11–17 Aug)</div>
-                    <div class="day">Thu 15</div>
-                    <div class="event">Independence Day</div>
-                    <div class="event">Parsi New Year</div>
+                    <a href="indepen.html"><div class="event">Independence Day</div></a>
                 </div>
             </div>
         </center></div>
@@ -88,26 +83,31 @@
             <div class="schedule">
                 <div class="week">
                     <div class="one"><b>ON THIS MONTH</b></div>
-                    <div class="date">(11–17 Aug)</div>
-                    <div class="day">Thu 15</div>
-                    <div class="event">Independence Day</div>
-                    <div class="event">Parsi New Year</div>
+                    <a href="hackathon.html"><div class="event">hackathon</div></a>
+                    <a href="indepen.html"><div class="event">Independence day</div></a>
+                    <a href="seminars.html"><div class="event">seminar</div></a>
                 </div>
+            </div>
+        </center></div>
+        <div class="frame"><center>
+            <div class="schedule">
                 <div class="week">
-                    <div class="date">(18–24 Aug)</div>
-                    <div class="day">Mon 19</div>
-                    <div class="event">Raksha Bandhan (Rakhi)</div>
-                </div>
-                <div class="week">
-                    <div class="date">(25–31 Aug)</div>
-                    <div class="day">Mon 26</div>
-                    <div class="event">Janmashtami</div>
-                    <div class="event">Janmashtami (Smarta)</div>
+                    <div class="one"><b>ON THIS YEAR</b></div>
+                    <a href="womens.html"><div class="event">Womens day</div></a>
+                    <a href="ugadi.html"><div class="event">Ugadi</div></a>
+                    <a href="abhiyanth.html"><div class="event">Abhiyanth</div></a>
+                    <a href="convocation.html"><div class="event">Convocation</div></a>
+                    <a href="hackathon.html"><div class="event">hackathon</div></a>
+                    <a href="indepen.html"><div class="event">Independence day</div></a>
+                    <a href="seminars.html"><div class="event">seminar</div></a>
+                    <a href="vinayaka.html"><div class="event">Ganesh chathurthi</div></a>
+                    <a href="cricket.html"><div class="event">Cricket match</div></a>
+                    <a href="seminars.html"><div class="event">seminar</div></a>
                 </div>
             </div>
         </center></div>
     </div>
     <br>
-    <center><a href="index.html"><button style="margin-top: 600px;margin-left:-700px;background-color: blue;font-size: large;">GO BACK</button></a></center>
+    <center><a href="index.html"><button style="margin-top: 600px;margin-left:-700px;background-color: rgb(226, 211, 224);font-size: large;">GO BACK</button></a></center>
 </body>
 </html>
